@@ -6,7 +6,7 @@ $notInclude = "SimpleTweaksPlugin";
 $counts = Get-Content "downloadcounts.json" | ConvertFrom-Json
 $categoryFallbacksMap = Get-Content "categoryfallbacks.json" | ConvertFrom-Json
 
-$dlTemplateInstall = "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/{0}/{1}/latest.zip"
+$dlTemplateInstall = "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/{1}/{0}/latest.zip"
 
 $apiLevel = 4
 
