@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'SilentlyContinue'
 
 $output = New-Object Collections.Generic.List[object]
-$notInclude = "aaaa","bbbb";
+$notInclude = "SimpleTweaksPlugin";
 
 $counts = Get-Content "downloadcounts.json" | ConvertFrom-Json
 $categoryFallbacksMap = Get-Content "categoryfallbacks.json" | ConvertFrom-Json
@@ -139,7 +139,3 @@ $outputStr = $output | ConvertTo-Json
 Write-Output $outputStr
 
 Out-File -FilePath .\pluginmaster.json -InputObject $outputStr
-
-$template = Get-Content -Path mdtemplate.txt
-$template = $template + $table
-Out-File -FilePath .\plugins.md -InputObject $template
