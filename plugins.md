@@ -7,4 +7,5 @@ They are made by third-party developers, not associated with XIVLauncher. You ca
 
 | Author | Name | Description |
 |---------------|---------------|-----------------|
+| Caraxi | [Auto Login](https://github.com/Caraxi/AutoLogin) | No, really... exactly what it says |
 

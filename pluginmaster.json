@@ -1,0 +1,19 @@
+{
+  "Author": "Caraxi",
+  "Name": "Auto Login",
+  "InternalName": "AutoLogin",
+  "AssemblyVersion": "1.0.0.0",
+  "Description": "No, really... exactly what it says",
+  "ApplicableVersion": "any",
+  "RepoUrl": "https://github.com/Caraxi/AutoLogin",
+  "DalamudApiLevel": 4,
+  "LoadPriority": 0,
+  "Punchline": "Does exactly what it says",
+  "IsHide": "False",
+  "IsTestingExclusive": "False",
+  "DownloadCount": 0,
+  "LastUpdate": "1636805379",
+  "DownloadLinkInstall": "https://raw.githubusercontent.com/Caraxi/MyPlugins/api4/AutoLogin/False/latest.zip",
+  "DownloadLinkTesting": "https://raw.githubusercontent.com/Caraxi/MyPlugins/api4/AutoLogin/True/latest.zip",
+  "DownloadLinkUpdate": "https://raw.githubusercontent.com/Caraxi/MyPlugins/api4/plugins/AutoLogin/latest.zip"
+}
