@@ -6,8 +6,7 @@ $notInclude = "SimpleTweaksPlugin";
 $counts = Get-Content "downloadcounts.json" | ConvertFrom-Json
 $categoryFallbacksMap = Get-Content "categoryfallbacks.json" | ConvertFrom-Json
 
-$dlTemplateInstall = "https://raw.githubusercontent.com/Caraxi/MyPlugins/api4/{0}/{1}/latest.zip"
-$dlTemplateUpdate = "https://raw.githubusercontent.com/Caraxi/MyPlugins/api4/{0}/{1}/latest.zip"
+$dlTemplateInstall = "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/{0}/{1}/latest.zip"
 
 $apiLevel = 4
 
@@ -71,68 +70,16 @@ Foreach-Object {
     }
     $content | add-member -Force -Name "LastUpdate" $updateDate -MemberType NoteProperty
 
-    $installLink = $dlTemplateInstall -f $internalName, "False"
+    $installLink = $dlTemplateInstall -f $internalName, "plugins"
     $content | add-member -Force -Name "DownloadLinkInstall" $installLink -MemberType NoteProperty
     
-    $installLink = $dlTemplateInstall -f $internalName, "True"
+    $installLink = $dlTemplateInstall -f $internalName, "plugins"
     $content | add-member -Force -Name "DownloadLinkTesting" $installLink -MemberType NoteProperty
     
-    $updateLink = $dlTemplateUpdate -f "plugins", $internalName
+    $updateLink =  $dlTemplateInstall -f $internalName, "plugins"
     $content | add-member -Force -Name "DownloadLinkUpdate" $updateLink -MemberType NoteProperty
 
     $output.Add($content)
-}
-
-Get-ChildItem -Path testing -File -Recurse -Include *.json |
-Foreach-Object {
-    $content = Get-Content $_.FullName | ConvertFrom-Json
-
-    if ($notInclude.Contains($content.InternalName)) { 
-    	$content | add-member -Force -Name "IsHide" -value "True" -MemberType NoteProperty
-    }
-    else
-    {
-    	$content | add-member -Force -Name "IsHide" -value "False" -MemberType NoteProperty
-    	# $table = $table + "| " + $content.Author + " | " + $content.Name + " | " + $content.Description + " |`n"
-    }
-
-    $dlCount = 0;
-    $content | add-member -Force -Name "DownloadCount" $dlCount -MemberType NoteProperty
-
-    if (($output | Where-Object {$_.InternalName -eq $content.InternalName}).Count -eq 0)
-    {
-        $content | add-member -Force -Name "TestingAssemblyVersion" -value $content.AssemblyVersion -MemberType NoteProperty
-        $content | add-member -Force -Name "IsTestingExclusive" -value "True" -MemberType NoteProperty
-
-		if ($content.CategoryTags -eq $null) {
-			$content | Select-Object -Property * -ExcludeProperty CategoryTags
-		
-			$fallbackCategoryTags = $categoryFallbacksMap | Select-Object -ExpandProperty $content.InternalName
-			if ($fallbackCategoryTags -ne $null) {
-				$content | add-member -Force -Name "CategoryTags" -value @() -MemberType NoteProperty
-				$content.CategoryTags += $fallbackCategoryTags
-			}
-		}
-
-        $internalName = $content.InternalName
-        
-        $updateDate = git log -1 --pretty="format:%ct" testing/$internalName/latest.zip
-        if ($updateDate -eq $null){
-            $updateDate = 0;
-        }
-        $content | add-member -Force -Name "LastUpdate" $updateDate -MemberType NoteProperty
-
-        $installLink = $dlTemplateInstall -f $internalName, "True"
-        $content | add-member -Force -Name "DownloadLinkInstall" $installLink -MemberType NoteProperty
-        
-        $installLink = $dlTemplateInstall -f $internalName, "True"
-        $content | add-member -Force -Name "DownloadLinkTesting" $installLink -MemberType NoteProperty
-    
-        $updateLink = $dlTemplateUpdate -f "plugins", $internalName
-        $content | add-member -Force -Name "DownloadLinkUpdate" $updateLink -MemberType NoteProperty
-    
-        $output.Add($content)
-    }
 }
 
 $outputStr = $output | ConvertTo-Json
