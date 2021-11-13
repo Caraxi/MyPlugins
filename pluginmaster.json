@@ -14,9 +14,9 @@
     "IsTestingExclusive": "False",
     "DownloadCount": 0,
     "LastUpdate": "1636805379",
-    "DownloadLinkInstall": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/AutoLogin/plugins/latest.zip",
-    "DownloadLinkTesting": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/AutoLogin/plugins/latest.zip",
-    "DownloadLinkUpdate": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/AutoLogin/plugins/latest.zip"
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/AutoLogin/latest.zip",
+    "DownloadLinkTesting": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/AutoLogin/latest.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/AutoLogin/latest.zip"
   },
   {
     "Author": "Caraxi",
@@ -33,9 +33,9 @@
     "IsTestingExclusive": "False",
     "DownloadCount": 27249,
     "LastUpdate": "1636807584",
-    "DownloadLinkInstall": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/RemindMe/plugins/latest.zip",
-    "DownloadLinkTesting": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/RemindMe/plugins/latest.zip",
-    "DownloadLinkUpdate": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/RemindMe/plugins/latest.zip"
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/RemindMe/latest.zip",
+    "DownloadLinkTesting": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/RemindMe/latest.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/RemindMe/latest.zip"
   },
   {
     "Author": "Caraxi",
@@ -52,8 +52,8 @@
     "IsTestingExclusive": "False",
     "DownloadCount": 63630,
     "LastUpdate": "1636806841",
-    "DownloadLinkInstall": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/SimpleTweaksPlugin/plugins/latest.zip",
-    "DownloadLinkTesting": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/SimpleTweaksPlugin/plugins/latest.zip",
-    "DownloadLinkUpdate": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/SimpleTweaksPlugin/plugins/latest.zip"
+    "DownloadLinkInstall": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/SimpleTweaksPlugin/latest.zip",
+    "DownloadLinkTesting": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/SimpleTweaksPlugin/latest.zip",
+    "DownloadLinkUpdate": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/SimpleTweaksPlugin/latest.zip"
   }
 ]
