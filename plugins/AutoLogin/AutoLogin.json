@@ -2,11 +2,11 @@
   "Author": "Caraxi",
   "Name": "Auto Login",
   "InternalName": "AutoLogin",
-  "AssemblyVersion": "1.0.0.2",
+  "AssemblyVersion": "1.0.0.3",
   "Description": "No, really... exactly what it says",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/Caraxi/AutoLogin",
-  "DalamudApiLevel": 4,
+  "DalamudApiLevel": 5,
   "LoadPriority": 1,
   "Punchline": "Does exactly what it says"
 }
