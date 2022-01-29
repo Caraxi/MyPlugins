@@ -3,7 +3,7 @@
     "Author": "Caraxi",
     "Name": "Auto Login",
     "InternalName": "AutoLogin",
-    "AssemblyVersion": "1.0.0.3",
+    "AssemblyVersion": "1.0.0.4",
     "Description": "No, really... exactly what it says",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Caraxi/AutoLogin",
@@ -13,7 +13,7 @@
     "IsHide": "False",
     "IsTestingExclusive": "False",
     "DownloadCount": 0,
-    "LastUpdate": "1643369328",
+    "LastUpdate": "1643466770",
     "DownloadLinkInstall": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/AutoLogin/latest.zip",
     "DownloadLinkTesting": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/AutoLogin/latest.zip",
     "DownloadLinkUpdate": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/AutoLogin/latest.zip"
