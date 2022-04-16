@@ -1,4 +1,4 @@
-{
+[{
   "Author": "Caraxi",
   "Name": "Auto Login",
   "InternalName": "AutoLogin",
@@ -16,4 +16,4 @@
   "DownloadLinkInstall": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/AutoLogin/latest.zip",
   "DownloadLinkTesting": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/AutoLogin/latest.zip",
   "DownloadLinkUpdate": "https://raw.githubusercontent.com/Caraxi/MyPlugins/main/plugins/AutoLogin/latest.zip"
-}
+}]
