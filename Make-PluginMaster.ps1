@@ -83,6 +83,9 @@ Foreach-Object {
 }
 
 $outputStr = $output | ConvertTo-Json
-Write-Output $outputStr
+
+if (!$outputStr.StartsWith("[")) {
+    $outputStr = "[$outputStr]"
+}
 
 Out-File -FilePath .\pluginmaster.json -InputObject $outputStr
